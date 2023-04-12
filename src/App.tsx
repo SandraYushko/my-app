@@ -11,28 +11,33 @@ function App() {
     //debugger
     return (
         <div>
-            This is App component
+            <AppTitle />
             <Rating />
             <Accordion />
+            <Rating />
         </div>
     );
 }
 
+function AppTitle() {
+    return <>This is App component</>
+}
 function Rating() {
-    //debugger
+    console.log("Rating rendered")
     return (
-        <div>
+        <>
             <Star />
             <Star />
             <Star />
             <Star />
             <Star />
-        </div>
+        </>
     );
 }
 
 
 function Star() {
+    console.log("Star rendered")
     return (
         <div>star</div>
     );
