@@ -8,7 +8,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <div> Hello </div>
+  <div> Hello
+  <App/>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
@@ -17,7 +19,9 @@ root.render(
 reportWebVitals();
 
 
-
+let b = 10;
+b = 12;
+//b = "sasha";
 
 let a = {
   name: "Sasha",
@@ -28,5 +32,29 @@ let a = {
   }
 };
 
+let users= [
+  {
+    name: "Sasha",
+    age: 10,
+    address: {
+      city: "Minsk",
+      country: "Belarus"
+    }
+  },
+{
+  name: "Ihar",
+      age: 13,
+    address: {
+  city: "Minsk",
+      country: "Belarus"
+}
+}
+]
 
-console.log(a);
+
+
+
+console.log(a.address.city);
+console.log(b);
+console.log(users[1].address.country);
+
