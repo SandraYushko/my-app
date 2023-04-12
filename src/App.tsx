@@ -3,29 +3,38 @@ import logo from './logo.svg';
 import './App.css';
 
 function hello() {
-    debugger
+    //debugger
     alert("Hello IT-KAMASUTRA")
 }
 hello();
 function App() {
-    debugger
+    //debugger
     return (
         <div>
             This is App component
+            <Rating />
+            <Accordion />
         </div>
     );
 }
 
-function Raiting() {
-    debugger
+function Rating() {
+    //debugger
     return (
         <div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+            <Star />
         </div>
+    );
+}
+
+
+function Star() {
+    return (
+        <div>star</div>
     );
 }
 
