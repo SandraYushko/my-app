@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import s from './OnOff.module.css'
+import s from './UncontrolledOnOff.module.css'
 
 type OnOffPropsType = {
-    value: boolean
+    //value: boolean
 }
 
-export function OnOff(props: OnOffPropsType) {
-    let [on, setOn] = useState(props.value);
+export function UncontrolledOnOff(props: OnOffPropsType) {
+    let [on, setOn] = useState(false);
 
     const onStyle = {
         width: "30px",
