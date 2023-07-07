@@ -10,12 +10,17 @@ import {UncontrolledOnOff} from './components/UncontrolledOnOff/UncontrolledOnOf
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValuePropsType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
+    let [switshOn, setSwitshOn] = useState<boolean>(false)
     return (
         <div className={"App"}>
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledRating/>
-            <Accordion titleValue={"Menu"} collapsed={accordionCollapsed} onClick={setAccordionCollapsed}/>
-            <OnOff value={true}/>
+            <Accordion
+                titleValue={"Menu"}
+                collapsed={accordionCollapsed}
+                onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}/>
+            <OnOff on={switshOn} onChange={setSwitshOn}/>
+            <UncontrolledOnOff onChange={setSwitshOn}/> {switshOn.toString()}
 
         </div>
     );
