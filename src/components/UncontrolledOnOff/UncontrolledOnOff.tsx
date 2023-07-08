@@ -25,6 +25,7 @@ export function UncontrolledOnOff(props: OnOffPropsType) {
         padding: '2px',
         backgroundColor: on ? "white" : "red"
     };
+
     const indicatorStyle = {
         width: "10px",
         height: "10px",
