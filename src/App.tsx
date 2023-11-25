@@ -21,6 +21,7 @@ function App() {
                 onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}/>
             <OnOff on={switshOn} onChange={setSwitshOn}/>
             <UncontrolledOnOff onChange={setSwitshOn}/> {switshOn.toString()}
+            <UncontrolledAccordion titleValue={'menu'}/>
 
         </div>
     );
