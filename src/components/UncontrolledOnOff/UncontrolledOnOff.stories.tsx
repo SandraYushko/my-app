@@ -8,6 +8,9 @@ export default {
 };
 
 const onChangeHandler = action('onChange')
-export const CollapsedAccordion = () => {
-    return <UncontrolledOnOff onChange={onChangeHandler}/>
+export const OffMode = () => {
+    return <UncontrolledOnOff onChange={onChangeHandler} defaultOn={false}/>
+}
+export const OnMode = () => {
+    return <UncontrolledOnOff onChange={onChangeHandler} defaultOn={true}/>
 }
